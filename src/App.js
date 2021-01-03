@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import Jitsi from 'react-jitsi';
+import { Jutsu } from 'react-jutsu';
 
 // const roomName = "My meeting";
 // const userName = "Dharshak";
@@ -19,7 +19,7 @@ function App() {
 
 	return (
 		<div>
-		  	{call ? (<Jitsi roomName={room} password={password} displayName={name}
+		  	{call ? (<Jutsu roomName={room} password={password} displayName={name}
 				onMeetingEnd={() => console.log('Meeting has ended')}
 				loadingComponent={<p>ʕ •ᴥ•ʔ jitsi is loading ...</p>} />
 			) : (
